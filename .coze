@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4350b8d033271acaecd00730f748842b18e943b5ac373b7e44d94e8a546ec5ef
-size 274
+[project]
+requires = ["nodejs-24"]
+
+[dev]
+build = ["bash", "./scripts/prepare.sh"]
+run = ["bash", "./scripts/dev.sh"]
+deps = ["git"] # -> apt install git
+
+[deploy]
+build = ["bash","./scripts/build.sh"]
+run = ["bash","./scripts/start.sh"]
+deps = ["git"] # -> apt install git

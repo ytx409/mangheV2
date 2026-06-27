@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bce0a8f53361cd39864f74119ea35d0f9181d67918dd5a2507c321739ae1414
-size 502
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  // outputFileTracingRoot: path.resolve(__dirname, '../../'),  // Uncomment and add 'import path from "path"' if needed
+  /* config options here */
+  allowedDevOrigins: ['*.dev.coze.site'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*',
+        pathname: '/**',
+      },
+    ],
+  },
+  experimental: {
+    lockDistDir: false,
+  },
+};
+
+export default nextConfig;

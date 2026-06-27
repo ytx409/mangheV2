@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aeb9da2518659d6458082392261936d9c7df7d8bc27242dbbc927002a65fc83d
-size 46
+node_modules
+build
+dist
+.git
+.trae
+.log
+.figma

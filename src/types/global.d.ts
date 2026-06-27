@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6b19bee2d316995682ba06fed9983b4f47c0748ada9ef98d051c6e1df459029
-size 503
+// 高德地图全局类型声明
+interface AMapStatic {
+  AutoComplete: any;
+  PlaceSearch: any;
+  Geolocation: any;
+  LngLat: any;
+  Driving: any;
+  DrivingPolicy: {
+    LEAST_TIME: number;
+    LEAST_FEE: number;
+    LEAST_DISTANCE: number;
+    REAL_TRAFFIC: number;
+  };
+  Walking: any;
+  WalkingPolicy: {
+    LEAST_TIME: number;
+    LEAST_DISTANCE: number;
+  };
+}
+
+interface Window {
+  AMap: AMapStatic;
+  _AMapSecurityConfig?: {
+    securityJsCode: string;
+  };
+  checkAMapLoaded?: () => boolean;
+}

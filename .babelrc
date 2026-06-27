@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b4bc94cc246a2dd71e0acbbdd0b9bd9d15aed6926762754cf979cfc4f08c73e
-size 197
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-react": {
+          "development": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@react-dev-inspector/babel-plugin"
+  ]
+}

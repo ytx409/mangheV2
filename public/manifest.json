@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2e34b5363720ad1f70a5e1b821bcab58ad94163ce0a8537dcea6208a9f6a2a1
-size 601
+{
+  "name": "盲盒去哪",
+  "short_name": "盲盒去哪",
+  "description": "以盲盒惊喜感+地图精准推荐，解决用户吃喝玩乐选择困难",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fbff",
+  "theme_color": "#42A5F5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "entertainment", "lifestyle"],
+  "lang": "zh-CN"
+}
